@@ -1,0 +1,25 @@
+@use "../util/" as *;
+
+.forecast-hours {
+  display: flex;
+  justify-content: space-between;
+  z-index: 2;
+}
+
+.layout-two {
+  .forecast-hours {
+    flex-direction: column;
+    gap: 0.75rem;
+    margin-top: 0.75rem;
+  }
+}
+
+@media (max-width: $bp-phone) {
+  .layout-one {
+    .forecast-hours {
+      overflow-x: auto;
+      gap: 0.5rem;
+      margin-top: 2rem;
+    }
+  }
+}

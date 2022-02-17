@@ -1,0 +1,45 @@
+:root {
+  --clr-primary: rgb(59, 72, 86);
+  --clr-primary-fade03: rgb(59, 72, 86, 0.3);
+  --clr-secondary: white;
+  --clr-accent: rgb(240, 153, 45);
+  --clr-accent-fade07: rgb(240, 153, 45, 0.7);
+  --clr-accent-fade03: rgb(240, 153, 45, 0.3);
+  --clr-accent-1: black;
+  --clr-error: rgb(201, 59, 67);
+  --clr-error-fade07: rgb(201, 59, 66, 0.7);
+}
+
+html.theme-night {
+  --clr-primary: #091c32;
+  --clr-primary-fade03: rgb(9, 28, 50, 0.3);
+}
+
+// font sizes
+$heading-xlarge: 8rem;
+$heading-large: 6rem;
+$heading-medium: 4rem;
+$heading-small: 3rem;
+$heading-xsmall: 2rem;
+$text-xlarge: 2.25rem;
+$text-large: 1.9rem;
+$text-medium-large: 1.5rem;
+$text-medium: 1.25rem;
+$text-small: 1.125rem;
+$text-medium-small: 0.875rem;
+$text-xsmall: 0.75rem;
+$text-normal: 1rem;
+
+// other variables
+$pageWidth: clamp(270px, 90%, 1200px);
+$radius-xlarge: 2rem;
+$radius-large: 8px;
+$radius-medium: 6px;
+$radius-small: 4px;
+$radius-xsmall: 2px;
+
+// breakpoints (max-width)
+$bp-desktop: 1080px;
+$bp-laptop: 992px;
+$bp-tablet: 768px;
+$bp-phone: 650px;

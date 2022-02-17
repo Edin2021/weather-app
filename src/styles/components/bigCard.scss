@@ -1,0 +1,43 @@
+@use "../util" as *;
+
+.layout-one {
+  .big-card {
+    @include flexCenter(column);
+    padding: 3.25rem;
+    padding-bottom: 2.5rem;
+    gap: 1rem;
+    margin-bottom: 0;
+    margin-top: auto;
+    background-color: var(--clr-primary-fade03);
+    border-radius: $radius-large;
+    position: relative;
+    overflow: hidden;
+    backdrop-filter: blur(4px);
+    .weather {
+      font-size: $text-large;
+      text-transform: capitalize;
+      display: flex;
+      align-items: center;
+      margin-bottom: 2rem;
+      font-weight: 400;
+      z-index: 2;
+      line-height: 1;
+      img {
+        width: 3.75rem;
+        margin-right: auto;
+      }
+    }
+  }
+}
+
+@media (max-width: $bp-phone) {
+  .layout-one {
+    .big-card {
+      gap: 1rem;
+      & > .weather {
+        margin-bottom: 1rem;
+        font-size: $text-medium-large;
+      }
+    }
+  }
+}

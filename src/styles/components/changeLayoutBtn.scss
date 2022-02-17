@@ -1,0 +1,32 @@
+@use "../util/" as *;
+
+.change-layout-btn {
+  display: grid;
+  place-items: center;
+  position: absolute;
+  right: 0;
+  top: 0;
+  background-color: var(--clr-accent-fade07);
+  width: 5.5rem;
+  height: 5.5rem;
+  border-bottom-left-radius: $radius-medium;
+  z-index: 3;
+  @include transition(background-color);
+  &:hover {
+    background-color: var(--clr-accent);
+  }
+  img {
+    width: 3rem;
+  }
+}
+
+@media (max-width: $bp-phone) {
+  .change-layout-btn {
+    &:hover {
+      background-color: var(--clr-accent-fade07);
+    }
+    &:active {
+      background-color: var(--clr-accent);
+    }
+  }
+}

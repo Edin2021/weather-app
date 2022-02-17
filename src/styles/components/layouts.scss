@@ -1,0 +1,159 @@
+@use "../util/" as *;
+
+.layout-one {
+  width: $pageWidth;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  animation: fadeInUp 0.5s ease;
+  header {
+    display: flex;
+    justify-content: space-between;
+    & > * {
+      flex: 1;
+    }
+  }
+  .under-header-con {
+    display: flex;
+    gap: 6rem;
+    margin-top: 2rem;
+    .left-side-con {
+      position: relative;
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      gap: 0.5rem;
+    }
+    .right-side-con {
+      flex: 2;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+    }
+  }
+}
+
+.layout-two {
+  width: clamp(270px, 90%, 1200px);
+  z-index: 1;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 4rem 5rem;
+  border-radius: $radius-medium;
+  animation: fadeInUp 1s ease;
+  & > img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 1;
+    display: none;
+  }
+  .top-half {
+    display: flex;
+    justify-content: space-between;
+    gap: 5rem;
+    .top-right {
+      display: flex;
+      justify-content: flex-end;
+      gap: 5rem;
+      .col {
+        max-width: max-content;
+      }
+    }
+  }
+  .bottom-half {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    .bottom-left {
+      .row {
+        display: flex;
+        align-items: flex-end;
+        gap: 1rem;
+      }
+    }
+  }
+}
+
+.seperator {
+  display: flex;
+  width: 2px;
+  height: 4rem;
+  background-color: var(--clr-secondary);
+}
+
+@media (max-width: $bp-desktop) {
+  .layout-one {
+    header {
+      flex-direction: column;
+      margin-top: 6rem;
+    }
+    .under-header-con {
+      display: flex;
+      gap: 2rem;
+      margin: 0;
+      margin-bottom: 2rem;
+      flex-direction: column;
+      .left-side-con {
+        max-width: 100%;
+        gap: 1rem;
+      }
+    }
+  }
+  .layout-two {
+    display: flex;
+    flex-direction: column;
+    background: none;
+    width: clamp(270px, 100%, 1200px);
+    padding: 0;
+    background-image: none !important;
+    padding-top: 6rem;
+    padding-bottom: 2rem;
+    .top-half {
+      order: 2;
+      flex-direction: column;
+      align-items: center;
+      justify-content: unset;
+      gap: 2rem;
+      .top-right {
+        gap: 2rem;
+      }
+    }
+    .bottom-half {
+      order: 1;
+      flex-direction: column;
+      align-items: center;
+      .bottom-left {
+        @include flexCenter(column);
+        .row {
+          @include flexCenter(column);
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: $bp-phone) {
+  .layout-two {
+    .top-half {
+      .top-right {
+        flex-direction: column;
+        width: 100%;
+        padding: 0 2rem;
+      }
+    }
+    .bottom-half {
+      .bottom-left {
+        flex-direction: column;
+        .row {
+          flex-direction: column;
+          align-items: center;
+        }
+      }
+    }
+  }
+}

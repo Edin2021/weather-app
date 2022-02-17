@@ -1,0 +1,36 @@
+@use "../util/" as *;
+
+.current-temperature {
+  font-size: $heading-xlarge;
+  font-weight: 600;
+  line-height: 1;
+  display: flex;
+  z-index: 2;
+  user-select: none;
+  cursor: pointer;
+  .unit {
+    font-size: $heading-small;
+    font-weight: 700;
+    margin-top: 1rem;
+    margin-bottom: auto;
+  }
+}
+
+.layout-two {
+  .current-temperature {
+    text-shadow: 2px 2px 4px rgb(0, 0, 0, 0.45);
+  }
+}
+
+@media (max-width: $bp-phone) {
+  .layout-one,
+  .layout-two {
+    .current-temperature {
+      font-size: $heading-medium;
+      .unit {
+        font-size: $text-large;
+        margin-top: 0.5rem;
+      }
+    }
+  }
+}

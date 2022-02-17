@@ -1,0 +1,26 @@
+@use "../util" as *;
+
+.time-info {
+  text-transform: capitalize;
+  font-size: $text-medium;
+  font-weight: 500;
+  margin-top: auto;
+  line-height: 1;
+  margin-top: 4rem;
+  text-shadow: 2px 2px 6px rgb(0, 0, 0, 0.65);
+  z-index: 2;
+}
+
+.layout-two {
+  .time-info {
+    margin-top: 0.75rem;
+  }
+}
+
+@media (max-width: $bp-phone) {
+  .layout-one {
+    .time-info {
+      margin: 0;
+    }
+  }
+}

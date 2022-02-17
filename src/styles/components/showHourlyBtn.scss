@@ -1,0 +1,45 @@
+@use "../util/" as *;
+
+.show-hourly-btn {
+  @include flexCenter(row);
+  max-width: max-content;
+  font-size: $text-small;
+  background-color: var(--clr-accent-fade07);
+  border-radius: $radius-small;
+  text-transform: capitalize;
+  color: var(--clr-secondary);
+  gap: 0.25rem;
+  padding: 0.5rem 2.25rem;
+  margin-top: 5rem;
+  margin-bottom: 1rem;
+  @include transition(background-color);
+  &:hover {
+    background-color: var(--clr-accent);
+  }
+  img {
+    width: 1rem;
+    transform: rotateZ(270deg);
+  }
+}
+
+.layout-two {
+  .show-hourly-btn {
+    margin: 0;
+    width: 100%;
+    max-width: 100%;
+  }
+}
+
+@media (max-width: $bp-desktop) {
+  .layout-one {
+    .show-hourly-btn {
+      margin: 2rem 0;
+    }
+  }
+}
+
+@media (max-width: $bp-phone) {
+  .show-hourly-btn {
+    display: none;
+  }
+}

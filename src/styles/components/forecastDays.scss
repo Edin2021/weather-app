@@ -1,0 +1,30 @@
+@use "../util/" as *;
+
+.forecast-days {
+  display: flex;
+  gap: 1.75rem;
+  margin-right: 0;
+  margin-left: auto;
+  z-index: 2;
+}
+
+.layout-two {
+  .forecast-days {
+    flex-direction: column;
+    gap: 1.25rem;
+  }
+}
+
+@media (max-width: $bp-desktop) {
+  .layout-one {
+    .forecast-days {
+      margin: 0;
+      gap: 1rem;
+    }
+  }
+  .layout-two {
+    .forecast-days {
+      width: 100%;
+    }
+  }
+}

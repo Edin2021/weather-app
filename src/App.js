@@ -1,24 +1,31 @@
-import logo from './logo.svg';
-import './App.css';
+import { useGlobalContext } from "./context";
+import BackgroundImage from "./components/BackgroundImage";
+import ChangeLayoutBtn from "./components/ChangeLayoutBtn";
+import LayoutOne from "./layouts/LayoutOne";
+import LayoutTwo from "./layouts/LayoutTwo";
+import LoaderOne from "./loaders/LoaderOne";
+import LoaderTwo from "./loaders/LoaderTwo";
+import Error from "./components/Error";
 
 function App() {
+  const { loading, layout } = useGlobalContext();
+
+  const loader = layout === "LAYOUT_ONE" ? <LoaderOne /> : <LoaderTwo />;
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      {loading ? (
+        loader
+      ) : (
+        <>
+          {" "}
+          <Error />
+          <BackgroundImage layout={layout} />
+          <ChangeLayoutBtn />
+          {layout === "LAYOUT_ONE" ? <LayoutOne /> : <LayoutTwo />}
+        </>
+      )}
+    </>
   );
 }
 

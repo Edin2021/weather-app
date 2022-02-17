@@ -1,0 +1,33 @@
+@use "../util" as *;
+
+.error-message {
+  position: fixed;
+  left: 50%;
+  top: 2rem;
+  transform: translateX(-50%);
+  z-index: 10;
+  background-color: var(--clr-error-fade07);
+  font-size: $text-medium-large;
+  padding: 1rem;
+  border-radius: $radius-medium;
+  width: max-content;
+  animation: fadeInDown 0.3s forwards ease;
+}
+
+@media (max-width: $bp-phone) {
+  .error-message {
+    font-size: $text-small;
+    padding: 0.5rem;
+  }
+}
+
+@keyframes fadeInDown {
+  from {
+    top: 2rem;
+    opacity: 0;
+  }
+  to {
+    top: 3rem;
+    opacity: 1;
+  }
+}

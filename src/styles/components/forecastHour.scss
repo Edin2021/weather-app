@@ -1,0 +1,84 @@
+@use "../util/" as *;
+
+.forecast-hour {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  opacity: 0;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+
+  .hour {
+    font-weight: 300;
+    font-size: $text-normal;
+    padding: 0.25rem;
+    border-radius: $radius-xsmall;
+    background-color: var(--clr-primary-fade03);
+    backdrop-filter: blur(4px);
+  }
+  img {
+    width: 2rem;
+  }
+  .temperature {
+    font-weight: 400;
+    font-size: $text-normal;
+  }
+}
+
+.layout-one .forecast-hour {
+  transform: translateX(-20%);
+}
+.layout-two .forecast-hour {
+  transform: translateY(-20%);
+}
+
+.layout-one {
+  .forecast-hours.show-hourly {
+    .forecast-hour {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+}
+
+.layout-two {
+  .forecast-hours.show-hourly {
+    .forecast-hour {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+}
+
+.layout-two {
+  .forecast-hour {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: unset;
+    background-color: var(--clr-primary-fade03);
+    backdrop-filter: blur(2px);
+    padding: 0rem 0.75rem;
+    border-radius: $radius-small;
+
+    .hour,
+    .temperature {
+      font-size: $text-medium-small;
+    }
+    .hour {
+      background-color: unset;
+      backdrop-filter: unset;
+      padding: 0;
+    }
+    .temperature {
+      font-weight: 400;
+    }
+  }
+}
+
+@media (max-width: $bp-phone) {
+  .forecast-hour {
+    transform: translateY(0);
+    opacity: 1;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+  }
+}

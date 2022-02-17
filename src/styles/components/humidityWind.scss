@@ -1,0 +1,29 @@
+@use "../util/" as *;
+
+.humidity-wind {
+  display: flex;
+  gap: 2rem;
+  z-index: 2;
+  text-shadow: 2px 2px 2px rgb(0, 0, 0, 0.45);
+  article {
+    @include flexCenter(column);
+    gap: 0.5rem;
+  }
+  h3 {
+    font-weight: 300;
+    text-transform: capitalize;
+    font-size: $text-medium-large;
+  }
+  span {
+    font-size: $text-large;
+    font-weight: 300;
+  }
+}
+
+@media (max-width: $bp-desktop) {
+  .layout-two {
+    .humidity-wind {
+      margin-bottom: 1rem;
+    }
+  }
+}
