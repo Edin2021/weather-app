@@ -27,3 +27,9 @@
     }
   }
 }
+
+@media (max-width: $bp-phone) {
+  .background-image {
+    height: 120vh;
+  }
+}
