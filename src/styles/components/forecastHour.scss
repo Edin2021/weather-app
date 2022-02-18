@@ -26,6 +26,9 @@
 
 .layout-one .forecast-hour {
   transform: translateX(-20%);
+  .temperature {
+    text-shadow: 0 2px 2px rgb(0, 0, 0, 0.5);
+  }
 }
 .layout-two .forecast-hour {
   transform: translateY(-20%);

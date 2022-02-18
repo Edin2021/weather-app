@@ -1,0 +1,61 @@
+<svg width="1467" height="1043" viewBox="0 0 1467 1043" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="loaderTwo">
+<g id="Rectangle 19" filter="url(#filter0_b_18_5960)">
+<rect width="1467" height="1043" fill="white"/>
+</g>
+<g id="Rectangle 4" filter="url(#filter1_b_18_5960)">
+<rect x="737" y="216" width="287" height="91" rx="4" fill="#3B4856" fill-opacity="0.3"/>
+</g>
+<g id="Rectangle 97" filter="url(#filter2_b_18_5960)">
+<rect x="737" y="324" width="287" height="91" rx="4" fill="#3B4856" fill-opacity="0.3"/>
+</g>
+<g id="Rectangle 101" filter="url(#filter3_b_18_5960)">
+<rect x="737" y="432" width="287" height="91" rx="4" fill="#3B4856" fill-opacity="0.3"/>
+</g>
+<rect id="Rectangle 95" x="215" y="282" width="404" height="29" rx="4" fill="#E5E5E5"/>
+<rect id="Rectangle 90" x="758" y="246" width="72" height="28" rx="4" fill="#E5E5E5"/>
+<rect id="Rectangle 98" x="758" y="354" width="72" height="28" rx="4" fill="#E5E5E5"/>
+<rect id="Rectangle 102" x="758" y="462" width="72" height="28" rx="4" fill="#E5E5E5"/>
+<rect id="Rectangle 96" x="929" y="246" width="72" height="28" rx="4" fill="#E5E5E5"/>
+<rect id="Rectangle 99" x="929" y="354" width="72" height="28" rx="4" fill="#E5E5E5"/>
+<rect id="Rectangle 103" x="929" y="462" width="72" height="28" rx="4" fill="#E5E5E5"/>
+<rect id="Rectangle 92" x="857" y="239" width="46" height="43" rx="21.5" fill="#E5E5E5"/>
+<rect id="Rectangle 100" x="857" y="347" width="46" height="43" rx="21.5" fill="#E5E5E5"/>
+<rect id="Rectangle 104" x="857" y="455" width="46" height="43" rx="21.5" fill="#E5E5E5"/>
+<rect id="Rectangle 108" x="621" y="823" width="46" height="43" rx="21.5" fill="#E5E5E5"/>
+<rect id="Rectangle 76" x="456" y="733" width="351" height="80" rx="4" fill="#E5E5E5"/>
+<rect id="Rectangle 106" x="215" y="827" width="111" height="36" rx="4" fill="#E5E5E5"/>
+<rect id="Rectangle 107" x="335" y="827" width="278" height="36" rx="4" fill="#E5E5E5"/>
+<rect id="Rectangle 105" x="215" y="666" width="232" height="147" rx="4" fill="#E5E5E5"/>
+<rect id="Rectangle 78" x="995" y="800" width="111" height="28" rx="4" fill="#E5E5E5"/>
+<rect id="Rectangle 80" x="1173" y="800" width="111" height="28" rx="4" fill="#E5E5E5"/>
+<rect id="Rectangle 79" x="995" y="838" width="111" height="28" rx="4" fill="#E5E5E5"/>
+<rect id="Rectangle 81" x="1173" y="838" width="111" height="28" rx="4" fill="#E5E5E5"/>
+</g>
+<defs>
+<filter id="filter0_b_18_5960" x="-200" y="-200" width="1867" height="1443" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feGaussianBlur in="BackgroundImage" stdDeviation="100"/>
+<feComposite in2="SourceAlpha" operator="in" result="effect1_backgroundBlur_18_5960"/>
+<feBlend mode="normal" in="SourceGraphic" in2="effect1_backgroundBlur_18_5960" result="shape"/>
+</filter>
+<filter id="filter1_b_18_5960" x="731" y="210" width="299" height="103" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feGaussianBlur in="BackgroundImage" stdDeviation="3"/>
+<feComposite in2="SourceAlpha" operator="in" result="effect1_backgroundBlur_18_5960"/>
+<feBlend mode="normal" in="SourceGraphic" in2="effect1_backgroundBlur_18_5960" result="shape"/>
+</filter>
+<filter id="filter2_b_18_5960" x="731" y="318" width="299" height="103" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feGaussianBlur in="BackgroundImage" stdDeviation="3"/>
+<feComposite in2="SourceAlpha" operator="in" result="effect1_backgroundBlur_18_5960"/>
+<feBlend mode="normal" in="SourceGraphic" in2="effect1_backgroundBlur_18_5960" result="shape"/>
+</filter>
+<filter id="filter3_b_18_5960" x="731" y="426" width="299" height="103" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feGaussianBlur in="BackgroundImage" stdDeviation="3"/>
+<feComposite in2="SourceAlpha" operator="in" result="effect1_backgroundBlur_18_5960"/>
+<feBlend mode="normal" in="SourceGraphic" in2="effect1_backgroundBlur_18_5960" result="shape"/>
+</filter>
+</defs>
+</svg>

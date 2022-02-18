@@ -20,7 +20,12 @@ function CurrentTemperature() {
       : Math.round(temperature_f).toString();
 
   return (
-    <div className="current-temperature" onClick={toggleUnits}>
+    <div
+      className="current-temperature"
+      onClick={toggleUnits}
+      title="Click to change units"
+    >
+      <span className="visually-hidden">click to change units</span>
       {temperature ? temperature : "N/A"}
       <span className="unit">{temperature ? tempUnit : ""}</span>
     </div>

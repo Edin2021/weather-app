@@ -21,6 +21,7 @@ function SearchBar() {
         type="button"
         className={`search-btn ${searchValue ? "clickable" : ""}`}
       >
+        <span className="visually-hidden">submit search button</span>
         <img src={searchIcon} alt="" />
       </button>
       <input
@@ -41,7 +42,7 @@ function SearchBar() {
             clearAutocompleteResults();
           }}
         >
-          <span className="visually-hidden">close autocomplete results</span>
+          <span className="visually-hidden">clear search</span>
           <img src={closeIcon} alt="" />
         </button>
       ) : (

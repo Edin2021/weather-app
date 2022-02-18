@@ -11,7 +11,7 @@
   padding: 1rem;
   border-radius: $radius-medium;
   width: max-content;
-  animation: fadeInDown 0.3s forwards ease;
+  animation: fadeInErrorMessage 0.3s forwards ease;
 }
 
 @media (max-width: $bp-phone) {
@@ -21,7 +21,7 @@
   }
 }
 
-@keyframes fadeInDown {
+@keyframes fadeInErrorMessage {
   from {
     top: 2rem;
     opacity: 0;

@@ -33,11 +33,11 @@ const weatherConditions = [
     keywords: ["partly-cloudy"],
   },
   { imgName: "cloudy", keywords: ["cloudy", "overcast"] },
-  { imgName: "rainy", keywords: ["rain", "drizzle"] },
-  { imgName: "thunder", keywords: ["thundery"] },
-  { imgName: "foggy", keywords: ["fog"] },
-  { imgName: "misty", keywords: ["mist"] },
-  { imgName: "snowy", keywords: ["snow", "sleet", "ice"] },
+  { imgName: "rainy", keywords: ["rain", "rainy", "drizzle"] },
+  { imgName: "thunder", keywords: ["thunder", "thundery"] },
+  { imgName: "foggy", keywords: ["fog", "foggy"] },
+  { imgName: "misty", keywords: ["mist", "misty"] },
+  { imgName: "snowy", keywords: ["snow", "snowy", "sleet", "ice"] },
   { imgName: "blizzard", keywords: ["blizard"] },
 ];
 
@@ -63,4 +63,19 @@ const cursorToEnd = (elem) => {
   elem.setSelectionRange(length, length);
 };
 
-export { weekdays, months, weatherConditions, debounce, cursorToEnd };
+const fetchOptions = {
+  method: "GET",
+  headers: {
+    "x-rapidapi-host": "weatherapi-com.p.rapidapi.com",
+    "x-rapidapi-key": process.env.REACT_APP_API_KEY,
+  },
+};
+
+export {
+  weekdays,
+  months,
+  weatherConditions,
+  debounce,
+  cursorToEnd,
+  fetchOptions,
+};

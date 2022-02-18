@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 
-import { weatherConditions, cursorToEnd } from "./util";
+import { weatherConditions, cursorToEnd, fetchOptions } from "./util";
 
 const AppContext = React.createContext();
 
@@ -10,7 +10,7 @@ const UNIT_METRIC = "METRIC";
 const UNIT_IMPERIAL = "IMPERIAL";
 
 export default function AppProvider({ children }) {
-  const [weatherData, setWeatherData] = useState({});
+  const [weatherData, setWeatherData] = useState(null);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(false);
   const [searchValue, setSearchValue] = useState("");
@@ -30,13 +30,10 @@ export default function AppProvider({ children }) {
 
   const fetchWeather = (q) => {
     setLoading(true);
-    fetch(`https://weatherapi-com.p.rapidapi.com/forecast.json?q=${q}&days=3`, {
-      method: "GET",
-      headers: {
-        "x-rapidapi-host": "weatherapi-com.p.rapidapi.com",
-        "x-rapidapi-key": process.env.REACT_APP_API_KEY,
-      },
-    })
+    fetch(
+      `https://weatherapi-com.p.rapidapi.com/forecast.json?q=${q}&days=3`,
+      fetchOptions
+    )
       .then((response) => {
         if (!response.ok) {
           setError(true);
@@ -58,23 +55,15 @@ export default function AppProvider({ children }) {
 
   const fetchAutocomplete = (value) => {
     fetch(
-      `https://weatherapi-com.p.rapidapi.com/search.json?q=${
-        value ? value : "%3CREQUIRED%3E"
-      }`,
-      {
-        method: "GET",
-        headers: {
-          "x-rapidapi-host": "weatherapi-com.p.rapidapi.com",
-          "x-rapidapi-key": process.env.REACT_APP_API_KEY,
-        },
-      }
+      `https://weatherapi-com.p.rapidapi.com/search.json?q=${value}`,
+      fetchOptions
     )
       .then((response) => response.json())
       .then((data) => {
         setAutocompleteResults(data);
       })
       .catch((err) => {
-        console.log("error fetch autocomplete");
+        console.log(err);
       });
   };
 
@@ -151,15 +140,24 @@ export default function AppProvider({ children }) {
   };
 
   const handleFocusedResult = (e) => {
-    setIsKey(true);
-    if (e.key === "ArrowDown") {
+    const key = e.key;
+    handleArrows(e, key);
+    handleBackspace(key);
+    handleEsc(key);
+  };
+
+  const handleArrows = (e, key) => {
+    if (key === "ArrowDown" || key === "ArrowUp") setIsKey(true);
+
+    if (key === "ArrowDown") {
       if (focusedResult < maxResults - 1) {
         setFocusedResult((prevState) => prevState + 1);
       } else {
         setFocusedResult(0);
       }
     }
-    if (e.key === "ArrowUp") {
+
+    if (key === "ArrowUp") {
       e.preventDefault();
       if (focusedResult > 0) {
         setFocusedResult((prevState) => prevState - 1);
@@ -167,11 +165,14 @@ export default function AppProvider({ children }) {
         setFocusedResult(maxResults - 1);
       }
     }
-    if (e.key === "Backspace" && suggestedSearch) {
+  };
+
+  const handleBackspace = (key) => {
+    if (key === "Backspace" && suggestedSearch) {
       setSearchValue(suggestedSearch);
       setSuggestedSearch("");
+      setIsKey(false);
     }
-    handleEsc(e.key);
   };
 
   const handleEsc = (key) => {
@@ -227,6 +228,26 @@ export default function AppProvider({ children }) {
     if (!formatString || formatString === " ") return;
     fetchAutocomplete(formatString);
   }, [searchValue]);
+
+  // Set weather condition and icon
+  useEffect(() => {
+    if (!weatherData) return;
+
+    let condition =
+      weatherData && weatherData.current && weatherData.current.condition.text;
+
+    const icon =
+      weatherData &&
+      weatherData.current &&
+      weatherData.current.condition.icon.split("/").reverse()[0].split(".")[0];
+
+    // Fix for bug at night condition sunny
+    if (IS_DAY_NIGHT === "night" && condition.toLowerCase() === "sunny") {
+      condition = "clear";
+    }
+    setCondition(condition);
+    setIcon(icon);
+  }, [weatherData, IS_DAY_NIGHT]);
 
   // Set background image and tab title based on weather condition
   useEffect(() => {
@@ -289,6 +310,7 @@ export default function AppProvider({ children }) {
   }, [focusedResult]);
 
   useEffect(() => {
+    if (!isKey) return;
     handleCursorToEnd();
   }, [focusedResult, suggestedSearch, searchValue]);
 
@@ -318,9 +340,9 @@ export default function AppProvider({ children }) {
         fetchWeather,
         units,
         tempUnit,
-        setCondition,
+        condition,
+        icon,
         backgroundImage,
-        setIcon,
         IS_DAY_NIGHT,
         clearAutocompleteResults,
         clearSearch,

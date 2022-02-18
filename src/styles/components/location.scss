@@ -19,6 +19,9 @@
   .place {
     font-size: $heading-small;
     text-shadow: 0 0 3px rgb(0, 0, 0, 0.5);
+    &.smaller-font-size {
+      font-size: $heading-xsmall;
+    }
   }
 }
 // }

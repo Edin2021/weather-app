@@ -1,25 +1,7 @@
-import { useEffect } from "react";
 import { useGlobalContext } from "../context";
 
 function DayNightWeather() {
-  const { layout, weatherData, IS_DAY_NIGHT, setCondition, setIcon } =
-    useGlobalContext();
-
-  const condition =
-    weatherData && weatherData.current && weatherData.current.condition.text;
-
-  const icon =
-    weatherData &&
-    weatherData.current &&
-    weatherData.current.condition.icon.split("/").reverse()[0].split(".")[0];
-
-  useEffect(() => {
-    setCondition(condition);
-  }, [weatherData, condition]);
-
-  useEffect(() => {
-    setIcon(icon);
-  }, [weatherData, icon]);
+  const { layout, IS_DAY_NIGHT, condition, icon } = useGlobalContext();
 
   return (
     <div className="day-night-weather">

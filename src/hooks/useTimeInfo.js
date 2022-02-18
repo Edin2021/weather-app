@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
-import { useGlobalContext } from "./context";
-import { weekdays, months } from "./util";
+import { useGlobalContext } from "../context";
+import { weekdays, months } from "../util";
 
 const refresh = 1000;
 

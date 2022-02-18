@@ -15,7 +15,7 @@ function ForecastHour({
       <img
         src={require(`../images/weather-icons/${IS_DAY_NIGHT}/${icon}.png`)}
         title={condition}
-        alt=""
+        alt={condition}
       />
       <span className="temperature">
         {temperature}

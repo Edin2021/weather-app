@@ -5,7 +5,7 @@ function ForecastDay({ temperature, icon, weekday, condition, tempUnit }) {
       <img
         src={require(`../images/weather-icons/day/${icon}.png`)}
         title={condition}
-        alt=""
+        alt={condition}
       />
       <span className="temperature">
         {temperature}

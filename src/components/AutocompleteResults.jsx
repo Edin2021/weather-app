@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import { useEffect } from "react";
 import { useGlobalContext } from "../context";
 import AutocompleteResult from "./AutocompleteResult";
 import { debounce } from "../util";

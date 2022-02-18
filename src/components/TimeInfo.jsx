@@ -1,4 +1,4 @@
-import useTimeInfo from "../useTimeInfo";
+import useTimeInfo from "../hooks/useTimeInfo";
 
 function TimeInfo() {
   const timeInfo = useTimeInfo();

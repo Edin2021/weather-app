@@ -32,7 +32,7 @@ h4,
 h5,
 h6 {
   margin-top: 0;
-  line-height: 100%;
+  line-height: 1;
 }
 
 button {
@@ -57,18 +57,36 @@ button {
   width: 1px;
 }
 
-svg {
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
-  height: 100%;
-  width: 100%;
-  object-fit: cover;
-}
-#loaderOne,
-#loaderTwo {
+#loaderOneDesktop,
+#loaderOneMobile,
+#loaderTwoDesktop,
+#loaderTwoMobile {
   animation: fadeInUp forwards 0.3s ease;
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  width: 100%;
+  max-height: 100%;
+}
+
+#loaderOneMobile,
+#loaderTwoMobile {
+  display: none;
+}
+
+@media (max-width: $bp-desktop) {
+  #loaderOneDesktop,
+  #loaderTwoDesktop {
+    display: none;
+  }
+
+  #loaderOneMobile,
+  #loaderTwoMobile {
+    display: block;
+  }
 }
 
 @keyframes fadeIn {

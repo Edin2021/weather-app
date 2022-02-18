@@ -8,13 +8,23 @@ function Location() {
   const place =
     weatherData && weatherData.location && weatherData.location.name;
 
-  const smallerFontSize =
+  const smallerFontSizeCountry =
     country && country.length >= 11 ? "smaller-font-size" : "";
+
+  const smallerFontSizePlace =
+    place && place.length >= 15 ? "smaller-font-size" : "";
 
   return (
     <div className="location">
-      <span className={`country ${smallerFontSize}`}>{country}</span>
-      <span className="place">{place}</span>
+      <span className={`country ${smallerFontSizeCountry}`}>
+        <span className="visually-hidden">country</span>
+        {country}
+      </span>
+      <span className={`place ${smallerFontSizePlace}`}>
+        {" "}
+        <span className="visually-hidden">place</span>
+        {place}
+      </span>
     </div>
   );
 }

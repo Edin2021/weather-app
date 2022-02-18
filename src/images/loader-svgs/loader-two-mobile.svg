@@ -1,0 +1,52 @@
+<svg width="444" height="1043" viewBox="0 0 444 1043" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="loaderTwoMobile">
+<g id="Rectangle 4" filter="url(#filter0_b_128_27)">
+<rect x="46" y="630" width="351" height="89" rx="4" fill="#3B4856" fill-opacity="0.3"/>
+</g>
+<g id="Rectangle 97" filter="url(#filter1_b_128_27)">
+<rect x="46" y="735" width="351" height="89" rx="4" fill="#3B4856" fill-opacity="0.3"/>
+</g>
+<g id="Rectangle 101" filter="url(#filter2_b_128_27)">
+<rect x="46" y="841" width="351" height="89" rx="4" fill="#3B4856" fill-opacity="0.3"/>
+</g>
+<rect id="Rectangle 95" x="46" y="564" width="351" height="29" rx="4" fill="#E5E5E5"/>
+<rect id="Rectangle 90" x="72" y="659" width="89" height="27" rx="4" fill="#E5E5E5"/>
+<rect id="Rectangle 98" x="72" y="764" width="89" height="28" rx="4" fill="#E5E5E5"/>
+<rect id="Rectangle 102" x="72" y="871" width="89" height="27" rx="4" fill="#E5E5E5"/>
+<rect id="Rectangle 96" x="281" y="659" width="89" height="27" rx="4" fill="#E5E5E5"/>
+<rect id="Rectangle 99" x="281" y="764" width="89" height="28" rx="4" fill="#E5E5E5"/>
+<rect id="Rectangle 103" x="281" y="871" width="89" height="27" rx="4" fill="#E5E5E5"/>
+<rect id="Rectangle 92" x="198" y="652" width="45" height="45" rx="22.5" fill="#E5E5E5"/>
+<rect id="Rectangle 100" x="198" y="758" width="45" height="45" rx="22.5" fill="#E5E5E5"/>
+<rect id="Rectangle 104" x="199" y="862" width="45" height="45" rx="22.5" fill="#E5E5E5"/>
+<rect id="Rectangle 108" x="339" y="315" width="39" height="36" rx="18" fill="#E5E5E5"/>
+<rect id="Rectangle 76" x="46" y="198" width="351" height="80" rx="4" fill="#E5E5E5"/>
+<rect id="Rectangle 106" x="93" y="315" width="111" height="36" rx="4" fill="#E5E5E5"/>
+<rect id="Rectangle 107" x="216" y="315" width="111" height="36" rx="4" fill="#E5E5E5"/>
+<rect id="Rectangle 105" x="133" y="112" width="178" height="59" rx="4" fill="#E5E5E5"/>
+<rect id="Rectangle 78" x="77" y="415" width="111" height="28" rx="4" fill="#E5E5E5"/>
+<rect id="Rectangle 80" x="255" y="415" width="111" height="28" rx="4" fill="#E5E5E5"/>
+<rect id="Rectangle 79" x="77" y="453" width="111" height="28" rx="4" fill="#E5E5E5"/>
+<rect id="Rectangle 81" x="255" y="453" width="111" height="28" rx="4" fill="#E5E5E5"/>
+</g>
+<defs>
+<filter id="filter0_b_128_27" x="40" y="624" width="363" height="101" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feGaussianBlur in="BackgroundImage" stdDeviation="3"/>
+<feComposite in2="SourceAlpha" operator="in" result="effect1_backgroundBlur_128_27"/>
+<feBlend mode="normal" in="SourceGraphic" in2="effect1_backgroundBlur_128_27" result="shape"/>
+</filter>
+<filter id="filter1_b_128_27" x="40" y="729" width="363" height="101" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feGaussianBlur in="BackgroundImage" stdDeviation="3"/>
+<feComposite in2="SourceAlpha" operator="in" result="effect1_backgroundBlur_128_27"/>
+<feBlend mode="normal" in="SourceGraphic" in2="effect1_backgroundBlur_128_27" result="shape"/>
+</filter>
+<filter id="filter2_b_128_27" x="40" y="835" width="363" height="101" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feGaussianBlur in="BackgroundImage" stdDeviation="3"/>
+<feComposite in2="SourceAlpha" operator="in" result="effect1_backgroundBlur_128_27"/>
+<feBlend mode="normal" in="SourceGraphic" in2="effect1_backgroundBlur_128_27" result="shape"/>
+</filter>
+</defs>
+</svg>
