@@ -2,7 +2,7 @@
 
 This application, as the name suggests, displays weather data to the user with custom backgrounds for both day and night based on the current weather condition for a selected location. The first location selected will be the user's location. For other locations, a search is available with suggestions based on the user's input. The user can see the current temperature, weather condition, 3-day forecast, a 9-hour forecast, user can change temperature units as well as choose between two layouts.
 
-## [Website Link](https://weather-app-web.pages.dev)
+## [Website Link](https://4c509813.weather-app-web.pages.dev/)
 
 ## API used
 
