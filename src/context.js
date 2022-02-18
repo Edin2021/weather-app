@@ -243,7 +243,7 @@ export default function AppProvider({ children }) {
 
     // Fix for bug at night condition sunny
     if (IS_DAY_NIGHT === "night" && condition.toLowerCase() === "sunny") {
-      condition = "clear";
+      condition = "Clear";
     }
     setCondition(condition);
     setIcon(icon);
