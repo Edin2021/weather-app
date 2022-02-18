@@ -10,9 +10,7 @@ This application, as the name suggests, displays weather data to the user with c
 
 ## Images
 
-<p align="center">
-<font size="6"> Day</font>
-</p>
+### Day
 
 |                       Layout one                        |                       Layout two                        |
 | :-----------------------------------------------------: | :-----------------------------------------------------: |
@@ -26,9 +24,7 @@ This application, as the name suggests, displays weather data to the user with c
 |     ![](/themes-images/themes-day/day-snowy-l1.jpg)     |     ![](/themes-images/themes-day/day-snowy-l2.jpg)     |
 |    ![](/themes-images/themes-day/day-blizard-l1.jpg)    |    ![](/themes-images/themes-day/day-blizard-l2.jpg)    |
 
-<p align="center">
-<font size="6"> Night</font>
-</p>
+### Night
 
 |                         Layout one                          |                         Layout two                          |
 | :---------------------------------------------------------: | :---------------------------------------------------------: |
