@@ -10,9 +10,7 @@ This application, as the name suggests, displays weather data to the user with c
 
 ## Images
 
-<p align="center">
 <font size="6"> Day</font>
-</p>
 
 |                       Layout one                        |                       Layout two                        |
 | :-----------------------------------------------------: | :-----------------------------------------------------: |
