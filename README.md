@@ -16,15 +16,15 @@ This application, as the name suggests, displays weather data to the user with c
 
 |                       Layout one                        |                       Layout two                        |
 | :-----------------------------------------------------: | :-----------------------------------------------------: |
-|     ![](/themes-images/themes-day/day-sunny-l1.png)     |     ![](/themes-images/themes-day/day-sunny-l2.png)     |
-| ![](/themes-images/themes-day/day-partly-cloudy-l1.png) | ![](/themes-images/themes-day/day-partly-cloudy-l2.png) |
-|    ![](/themes-images/themes-day/day-cloudy-l1.png)     |    ![](/themes-images/themes-day/day-cloudy-l2.png)     |
-|     ![](/themes-images/themes-day/day-foggy-l1.png)     |     ![](/themes-images/themes-day/day-foggy-l2.png)     |
-|     ![](/themes-images/themes-day/day-misty-l1.png)     |     ![](/themes-images/themes-day/day-misty-l2.png)     |
-|     ![](/themes-images/themes-day/day-rainy-l1.png)     |     ![](/themes-images/themes-day/day-rainy-l2.png)     |
-|   ![](/themes-images/themes-day/day-thundery-l1.png)    |   ![](/themes-images/themes-day/day-thundery-l2.png)    |
-|     ![](/themes-images/themes-day/day-snowy-l1.png)     |     ![](/themes-images/themes-day/day-snowy-l2.png)     |
-|    ![](/themes-images/themes-day/day-blizard-l1.png)    |    ![](/themes-images/themes-day/day-blizard-l2.png)    |
+|     ![](/themes-images/themes-day/day-sunny-l1.jpg)     |     ![](/themes-images/themes-day/day-sunny-l2.jpg)     |
+| ![](/themes-images/themes-day/day-partly-cloudy-l1.jpg) | ![](/themes-images/themes-day/day-partly-cloudy-l2.jpg) |
+|    ![](/themes-images/themes-day/day-cloudy-l1.jpg)     |    ![](/themes-images/themes-day/day-cloudy-l2.jpg)     |
+|     ![](/themes-images/themes-day/day-foggy-l1.jpg)     |     ![](/themes-images/themes-day/day-foggy-l2.jpg)     |
+|     ![](/themes-images/themes-day/day-misty-l1.jpg)     |     ![](/themes-images/themes-day/day-misty-l2.jpg)     |
+|     ![](/themes-images/themes-day/day-rainy-l1.jpg)     |     ![](/themes-images/themes-day/day-rainy-l2.jpg)     |
+|   ![](/themes-images/themes-day/day-thundery-l1.jpg)    |   ![](/themes-images/themes-day/day-thundery-l2.jpg)    |
+|     ![](/themes-images/themes-day/day-snowy-l1.jpg)     |     ![](/themes-images/themes-day/day-snowy-l2.jpg)     |
+|    ![](/themes-images/themes-day/day-blizard-l1.jpg)    |    ![](/themes-images/themes-day/day-blizard-l2.jpg)    |
 
 <p align="center">
 <font size="6"> Night</font>
@@ -32,12 +32,12 @@ This application, as the name suggests, displays weather data to the user with c
 
 |                         Layout one                          |                         Layout two                          |
 | :---------------------------------------------------------: | :---------------------------------------------------------: |
-|     ![](/themes-images/themes-night/night-clear-l1.png)     |     ![](/themes-images/themes-night/night-clear-l2.png)     |
-| ![](/themes-images/themes-night/night-partly-cloudy-l1.png) | ![](/themes-images/themes-night/night-partly-cloudy-l2.png) |
-|    ![](/themes-images/themes-night/night-cloudy-l1.png)     |    ![](/themes-images/themes-night/night-cloudy-l2.png)     |
-|     ![](/themes-images/themes-night/night-foggy-l1.png)     |     ![](/themes-images/themes-night/night-foggy-l2.png)     |
-|     ![](/themes-images/themes-night/night-misty-l1.png)     |     ![](/themes-images/themes-night/night-misty-l2.png)     |
-|     ![](/themes-images/themes-night/night-rainy-l1.png)     |     ![](/themes-images/themes-night/night-rainy-l2.png)     |
-|   ![](/themes-images/themes-night/night-thundery-l1.png)    |   ![](/themes-images/themes-night/night-thundery-l2.png)    |
-|     ![](/themes-images/themes-night/night-snowy-l1.png)     |     ![](/themes-images/themes-night/night-snowy-l2.png)     |
-|    ![](/themes-images/themes-night/night-blizard-l1.png)    |    ![](/themes-images/themes-night/night-blizard-l2.png)    |
+|     ![](/themes-images/themes-night/night-clear-l1.jpg)     |     ![](/themes-images/themes-night/night-clear-l2.jpg)     |
+| ![](/themes-images/themes-night/night-partly-cloudy-l1.jpg) | ![](/themes-images/themes-night/night-partly-cloudy-l2.jpg) |
+|    ![](/themes-images/themes-night/night-cloudy-l1.jpg)     |    ![](/themes-images/themes-night/night-cloudy-l2.jpg)     |
+|     ![](/themes-images/themes-night/night-foggy-l1.jpg)     |     ![](/themes-images/themes-night/night-foggy-l2.jpg)     |
+|     ![](/themes-images/themes-night/night-misty-l1.jpg)     |     ![](/themes-images/themes-night/night-misty-l2.jpg)     |
+|     ![](/themes-images/themes-night/night-rainy-l1.jpg)     |     ![](/themes-images/themes-night/night-rainy-l2.jpg)     |
+|   ![](/themes-images/themes-night/night-thundery-l1.jpg)    |   ![](/themes-images/themes-night/night-thundery-l2.jpg)    |
+|     ![](/themes-images/themes-night/night-snowy-l1.jpg)     |     ![](/themes-images/themes-night/night-snowy-l2.jpg)     |
+|    ![](/themes-images/themes-night/night-blizard-l1.jpg)    |    ![](/themes-images/themes-night/night-blizard-l2.jpg)    |
