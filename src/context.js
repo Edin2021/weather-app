@@ -28,44 +28,35 @@ export default function AppProvider({ children }) {
   const [maxResults, setMaxResults] = useState(6);
   const [isKey, setIsKey] = useState(false);
 
-  const fetchWeather = (q) => {
+  async function fetchWeather(q) {
     setLoading(true);
-    fetch(
-      `https://weatherapi-com.p.rapidapi.com/forecast.json?q=${q}&days=3`,
-      fetchOptions
-    )
-      .then((response) => {
-        if (!response.ok) {
-          setError(true);
-          getCurrLocationWeather();
-        }
-        return response.json();
-      })
-      .then((data) => {
-        setWeatherData(data);
-        clearSearch();
-        clearAutocompleteResults();
-        setLoading(false);
-      })
-      .catch((err) => {
-        setError(true);
-        getCurrLocationWeather();
-      });
-  };
+    const url = `https://weatherapi-com.p.rapidapi.com/forecast.json?q=${q}&days=3`;
+    const response = await fetch(url, fetchOptions);
 
-  const fetchAutocomplete = (value) => {
-    fetch(
-      `https://weatherapi-com.p.rapidapi.com/search.json?q=${value}`,
-      fetchOptions
-    )
-      .then((response) => response.json())
-      .then((data) => {
-        setAutocompleteResults(data);
-      })
-      .catch((err) => {
-        console.log(err);
-      });
-  };
+    if (response.ok) {
+      const data = await response.json();
+      setWeatherData(data);
+      clearSearch();
+      clearAutocompleteResults();
+      setLoading(false);
+    } else if (!response.ok) {
+      setError(true);
+      getCurrLocationWeather();
+      setLoading(false);
+    }
+  }
+
+  async function fetchAutocomplete(q) {
+    const url = `https://weatherapi-com.p.rapidapi.com/search.json?q=${q}`;
+    const response = await fetch(url, fetchOptions);
+
+    if (response.ok) {
+      const data = await response.json();
+      setAutocompleteResults(data);
+    } else if (!response.ok) {
+      console.log(response);
+    }
+  }
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -243,7 +234,7 @@ export default function AppProvider({ children }) {
 
     // Fix for bug at night condition sunny
     if (IS_DAY_NIGHT === "night" && condition.toLowerCase() === "sunny") {
-      condition = "clear";
+      condition = "Clear";
     }
     setCondition(condition);
     setIcon(icon);
